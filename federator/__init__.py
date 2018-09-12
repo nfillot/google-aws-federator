@@ -6,7 +6,8 @@ import argparse
 
 def init(args):
     args = vars(args)
-    federator.Federator(clientId=args['clientid'], clientSecret=args['clientsecret'])
+    federator.User(clientId=args['clientid'], clientSecret=args['clientsecret'])
+    federator.Schema(clientId=args['clientid'], clientSecret=args['clientsecret']) 
 
 def schema_verify(args):
     args = vars(args)
